@@ -12,6 +12,12 @@ namespace lost_key_whitelist_verification
         public string eosaccount { get; set; }
         public string eoskey { get; set; }
         public string balance { get; set; }
+
+        public Decimal getEOSBalance()
+        {
+            return Convert.ToDecimal(this.balance);
+        }
+
     }
 
     class WhitelistItem
@@ -50,9 +56,16 @@ namespace lost_key_whitelist_verification
                 {
                     if(genesisRecordMatch.ethkey != "0x" + whitelistItem.eth_address)
                     {
-                        Console.WriteLine("WARNING: Account {0} in the white list has eth key {1}, however in the genesis snapshot it's listed as {2}", whitelistItem.account, whitelistItem.eth_address, genesisRecordMatch.ethkey);
+                        Console.WriteLine("WARNING: Account {0} in the white list has eth key {1}, however in the genesis snapshot it's listed as {2}", whitelistItem.account, whitelistItem.eth_address, genesisRecordMatch.getEOSBalance());
                         break;
                     }
+                    
+                    if(genesisRecordMatch.getEOSBalance() > 100000)
+                    {
+                        Console.WriteLine("BALANCE: Account {0} has balance {1} - {2}", whitelistItem.account, genesisRecordMatch.balance, genesisRecordMatch.getEOSBalance().ToString("#.####"));
+                    }
+
+
                 }
                     
 
