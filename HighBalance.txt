@@ -41,6 +41,8 @@ BALANCE: Account gqztgmrwgene has balance 3286042.1108 - 3286042.1108
 BALANCE: Account gu2dsoagenes has balance 100628.5950 - 100628.595
 BALANCE: Account gu3tenzwhege has balance 150004.4862 - 150004.4862
 BALANCE: Account gu3tmnrqgege has balance 370966.8898 - 370966.8898
+BALANCE: Account gu4timjsg4ge has balance 100000.0000 - 100000
+BALANCE: Account gu4timjsgyge has balance 100000.0000 - 100000
 BALANCE: Account gu4tknjugqge has balance 111187.0177 - 111187.0177
 BALANCE: Account guytanrxguge has balance 172111.0000 - 172111
 BALANCE: Account guytenjrgage has balance 225003.8588 - 225003.8588

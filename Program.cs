@@ -60,7 +60,7 @@ namespace lost_key_whitelist_verification
                         break;
                     }
                     
-                    if(genesisRecordMatch.getEOSBalance() > 100000)
+                    if(genesisRecordMatch.getEOSBalance() >= 100000)
                     {
                         Console.WriteLine("BALANCE: Account {0} has balance {1} - {2}", whitelistItem.account, genesisRecordMatch.balance, genesisRecordMatch.getEOSBalance().ToString("#.####"));
                     }
