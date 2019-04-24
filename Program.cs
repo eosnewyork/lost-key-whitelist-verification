@@ -40,7 +40,7 @@ namespace lost_key_whitelist_verification
             // whitelisted.csv (csv generated using EOSDotNET) https://github.com/eosnewyork/EOSDotNet 
             // The tool essentially steps through the table structure similar to this:
             // cleos -u https://api.eosnewyork.io get table unusedaccnts unusedaccnts whitelist
-            // whitelisted.csv contains 95393 records
+            // whitelisted.csv contains 95334 records
             loadWhitelistCSV("whitelisted.csv");
             Console.WriteLine("{0} whitelist records loaded", whitelistLines.Count);
 
